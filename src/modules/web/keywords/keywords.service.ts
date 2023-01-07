@@ -14,6 +14,11 @@ function extractKeywordsFromText(text: string): Record<string, number> {
   return countedWordsMap
 }
 
+function checkWordCount(text: string, word: string): number {
+  const keywords = extractKeywordsFromText(text)
+  return keywords[word.toLowerCase()] || 0
+}
+
 function sortMapDesc(map: Record<string, number>) {
   return Object.entries(map)
     .sort((a, b) => b[1] - a[1])
@@ -23,4 +28,4 @@ function sortMapDesc(map: Record<string, number>) {
     }, {})
 }
 
-export const keywordsService = { extractKeywordsFromText, sortMapDesc }
+export const keywordsService = { extractKeywordsFromText, sortMapDesc, checkWordCount }
