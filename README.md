@@ -30,6 +30,10 @@ It's a Node.JS application that is created to check count of each word of the re
  4. Run `build:watch` and `start:watch` commands in parallel 
  5. Use it with pleasure :)
 
+### How to test
+Project has unit tests that are stored in the `tests` folder. Tests are written with `Jest` library.
+To test a project, you need to run `test:unit` and `build:watch` commands in parallel.
+
 ### How to use
 There is single endpoint at the moment, and in order to get keywords from the website you need to run
 `http://localhost:{{PORT}}/api/v1/keywords?url=https://google.com`
@@ -43,7 +47,3 @@ Response example:
     	"https": 13,
     	...
     }
-
-### How to test
-Project has unit tests that are stored in the `tests` folder. Tests are written with `Jest` library.
-To test a project, you need to run this command `test:unit`
