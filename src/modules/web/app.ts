@@ -1,6 +1,7 @@
 import { json, urlencoded } from 'body-parser'
 import express, { Router } from 'express'
 import { errorMiddleware } from '@lib/middlewares/error.js'
+import { createKeywordsRouter } from './keywords/keywords.routes.js'
 
 export function buildApp() {
   const app = express()
@@ -16,6 +17,8 @@ export function buildApp() {
 
 function configureV1Routes() {
   const router = Router()
+
+  router.use('/keywords', createKeywordsRouter())
 
   return router
 }
