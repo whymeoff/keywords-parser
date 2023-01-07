@@ -1,5 +1,5 @@
 # Keywords parser
-It's a Node.JS application that is created to check count of each word of the requested page, in another words "keywords parse"
+It's a Node.JS application that is created to check count of each word of the requested page, in another words "keywords parser"
 
 ### Stack
  - Javascript, Typescript, Node.JS (16+)
