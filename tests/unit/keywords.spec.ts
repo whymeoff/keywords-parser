@@ -9,6 +9,8 @@ const text = `
 
   Should not parse numbers.
 
+  123
+
   Case insensitive
 
   ...
